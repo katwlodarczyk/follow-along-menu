@@ -184,7 +184,8 @@ button:hover {
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  transition: all 200ms linear;
+  transition: all 200ms;
+  transform-origin: 0 0;
 }
 
 .menu-background.open {
@@ -197,6 +198,12 @@ button:hover {
   height: 14px;
   background: white;
   transform: rotate(45deg) translateY(-50%);
+  transition: all 200ms;
+  opacity: 0;
+}
+
+.arrow.open {
+  opacity: 1;
 }
 
 .menu {
