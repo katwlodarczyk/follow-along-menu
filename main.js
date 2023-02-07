@@ -48,11 +48,4 @@ function handleLeave() {
   menu.classList.remove("menu-enter", "menu-enter-active");
   menuBackground.classList.remove("open");
   arrow.classList.remove("open");
-  menu.classList.add("menu-leave");
-  setTimeout(() => menu.classList.add("menu-leave-active"), 50);
-
-  setTimeout(
-    () => menu.classList.remove("menu-leave", "menu-leave-active"),
-    200
-  );
 }
